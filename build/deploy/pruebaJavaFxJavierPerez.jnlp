@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="pruebaJavaFxJavierPerez.jnlp">
+  <information>
+    <title>pruebaJavaFxJavierPerez</title>
+    <vendor>Javier Perez</vendor>
+    <description>JavaFx</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="pruebaJavaFxJavierPerez.jar" size="193527" download="eager" />
+    <jar href="libs\jfoenix-1.4.0.jar" size="2363143" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="0" height="0" main-class="Control.MainFX"  name="JavaFx" />
+  <update check="background"/>
+</jnlp>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.ControlFX">
+   <children>
+      <BorderPane prefHeight="600.0" prefWidth="1000.0">
+         <center>
+            <SplitPane dividerPositions="0.6953907815631263" prefHeight="600.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="500.0" style="-fx-background-color: D7CCC8;">
+                     <children>
+                        <ImageView fitHeight="391.0" fitWidth="287.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Vista/assets/images/freesolo.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="85.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Your own Account" wrappingWidth="314.25">
+                           <font>
+                              <Font name="Segoe UI Light" size="48.0" />
+                           </font>
+                        </Text>
+                        <JFXButton layoutX="85.0" layoutY="520.0" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #ffffff; -fx-background-radius: 40px; -fx-text-color: #D7CCC8;" text="ABOUT US">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                        <JFXButton layoutX="256.0" layoutY="520.0" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #757575; -fx-background-radius: 40px;" text="SIGN IN">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="500.0" prefHeight="600.0" prefWidth="300.0">
+                     <children>
+                        <GridPane prefHeight="600.0" prefWidth="500.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="47.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="330.0" minWidth="10.0" prefWidth="330.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="0.0" prefWidth="0.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="227.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="378.0" minHeight="10.0" prefHeight="356.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="202.0" minHeight="10.0" prefHeight="117.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Circle fill="WHITE" radius="50.0" stroke="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Text fill="#ff4081" strokeType="OUTSIDE" strokeWidth="0.0" text="M" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Text>
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" promptText="First Name" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="40.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" layoutX="40.0" layoutY="157.0" promptText="Second Name" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="100.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <JFXTextField focusColor="#ff4081" labelFloat="true" layoutX="40.0" layoutY="217.0" promptText="E-MAIL" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="160.0" />
+                                 </GridPane.margin>
+                              </JFXTextField>
+                              <JFXButton onMouseClicked="#handleSend" prefHeight="32.0" prefWidth="132.0" style="-fx-background-color: #757575; -fx-background-radius: 40px;" text="GET STARTED" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <Blend />
+                                 </effect>
+                              </JFXButton>
+                              <JFXPasswordField focusColor="#ff4081" labelFloat="true" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="220.0" />
+                                 </GridPane.margin>
+                              </JFXPasswordField>
+                              <JFXPasswordField focusColor="#ff4081" labelFloat="true" layoutX="40.0" layoutY="357.0" promptText="Repeat Password" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="280.0" />
+                                 </GridPane.margin>
+                              </JFXPasswordField>
+                              <JFXToggleButton prefHeight="72.0" prefWidth="148.0" text="UNDER 18?" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
